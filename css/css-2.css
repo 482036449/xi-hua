@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+.biankuang{background-color:aliceblue;
+		          text-align:center;
+		          overflow:hidden;
+		          width:800px; 
+		          padding: 50px;
+                 }
+		/*边框*/
+
+		.table{border:solid thick;
+		      border-collapse: collapse;
+		      margin: 0px}
+		/*表格边框*/
+		colgroup,tbody{border: solid medium}
+		td{ border: solid medium;
+		    height: 1.5em;
+		    width: 1.5em;
+			padding: 0;
+			color:black}
+		/*单元设置*/
+		th{background-color:aliceblue;
+		  color:#0E0D0D;
+		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		font-size:14px}
+		/*表头设置*/
+		.zimu{width: 30px}
+		/*字母设置*/
+		.mingzi{width: 100px;
+		        text-align: center}
+		/*名字设置*/
+		.pinyin{width:140px;}
+		/*名字拼音*/
+		.zhiwu{width: 200px}
+		 /*职务设置*/
+		.dianhua{width: 150px}
+		 /*电话设置*/
+		.youxiang{width: 240px}
+	    body{background-color:aliceblue}
+		h4{text-align: center}

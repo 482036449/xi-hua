@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="utf-8">
+	<title>90后婚恋观</title>
+	<script src="js/echarts.min.js"></script>
+	<link rel="stylesheet" href="css/css-1.css">
+	
+</head>
+
+<body>
+	<div class="container">
+	<!--导航栏设置-->
+		<div class="nav">
+			<ul>
+				<li>
+					<a href="index.html#shouye">首页</a>
+				</li>
+				<li>
+					<a href="index.html#yuwang">脱单欲望</a>
+				</li>
+				<li>
+					<a href="index.html#yuanyin">婚恋苦恼</a>
+				</li>
+				<li>
+					<a href="index.html#shijian">婚恋时长</a>
+				</li>
+				<li>
+					<a href="index.html#jianyi">一些建议</a>
+				</li>
+			</ul>
+		</div>
+
+		<br>
+		<br>
+
+		<!--首页设置-->
+		<div id="shouye" class="shouYe">
+			<div class="left">
+			<figure>
+				<img src="img/img-1.gif" height="500px" alt="首页图">
+			</figure>
+			</div>
+			<div class="right" style="margin-left: 120px;margin-top: 70px;height: 250px">
+				<figure>
+					<img src="img/img-2.png" width="500px" height="250px" alt="头像">
+				</figure>
+			</div>
+		</div>
+
+		
+
+	
+		<div class="wenZi">
+		<h2>90后的婚恋观</h2>
+			<p>
+				随着2020年的到来，90后的人大部分已经开始步入职场，开始面临为结婚而苦恼了。
+				<br>
+				今日，就让我们走进90后的世界，去了解90后的婚恋观念。
+			</p>
+		</div>
+		
+		<br>
+		
+		<div class="wenZi">
+		<p>现在90后才刚进入社会，面对的压力众多。
+			<br>
+			先了解一下90后中认为什么压力最重。</p>
+		</div>
+		
+	  <div class="yali" id="yaLi">
+		    <script type="text/javascript">
+				var myChart=echarts.init(document.getElementById('yaLi'));
+
+			 option = {
+    backgroundColor: '#F9EDCB',
+    title: {
+        text: '90后认为什么压力最重',
+        left: 'center',
+        top: 30,
+        textStyle: {
+            color:'#000000'
+        }
+    },
+    tooltip: {
+        trigger: 'item',
+        formatter: '{a} <br/>{b} : {c} ({d}%)'
+    },
+    visualMap: {
+        show: false,
+        min: 80,
+        max: 600,
+        inRange: {
+            colorLightness: [0, 1]
+        }
+    },
+    series: [
+        {
+            name: '90后认为什么压力最重',
+            type: 'pie',
+            radius: '60%',
+            center: ['50%', '50%'],
+            data: [
+                {value: 445.3, name: '单身压力'},
+                {value: 184.6, name: '经济压力'},
+                {value: 126.5, name: '自我提升压力'},
+                {value: 164.5, name: '工作压力'},
+                {value: 79.1, name: '其他'}
+            ].sort(function (a, b) { return a.value - b.value; }),
+            roseType: 'radius',
+            label: {
+                color: '#c23531'
+            },
+            labelLine: {
+                lineStyle: {
+                    color: '#c23531'
+                },
+                smooth: 0.2,
+                length: 10,
+                length2: 20
+            },
+            itemStyle: {
+                color: '#10E9F7',
+                shadowBlur: 200,
+                shadowColor: 'rgba(0, 0, 0, 0.5)'
+            },
+
+            animationType: 'scale',
+            animationEasing: 'elasticOut',
+            animationDelay: function (idx) {
+                return Math.random() * 200;
+            }
+        }
+    ]
+};
+			 myChart.setOption(option);
+			</script>
+		</div>
+		
+		<div class="wenZi">
+		    <p>结果显示
+				<br>
+				单身压力果真是大部分90后的最大压力，其次是经济、自我提升与工作压力。
+				<br>那么造成单身压力的原因有哪些呢？</p>
+		</div>
+		
+		
+		<!--脱单欲望-->
+		<div class="wenZi" >
+			<h3>脱单欲望</h3>
+			<p>90后的单身压力这么大，并且男女人口比列1.3:1，竞争加剧，
+				<br>所以，90后的脱单欲望是很强烈的。
+			</p>
+		</div>
+		<div class="yuWang" id="yuwang" >
+			<script type="text/javascript">
+				var myChart=echarts.init(document.getElementById('yuwang'));
+
+				var option = {
+		title: {
+			text: '90后脱单欲望',
+			top:90,
+			left: 'center'
+		},
+		tooltip: {
+			trigger: 'item',
+
+		},
+		legend: {
+			orient: 'vertical',
+			center: 'left',
+			data: ['', '',]
+		},
+		series: [
+			{
+				name: '单位：%',
+				type: 'pie',
+				radius: '55%',
+				center: ['50%', '60%'],
+				data: [
+					{value: 86.28, name: '对目前单身状态不满'},
+
+					{value: 13.72, name: ''},
+
+				],
+				labelLine: {
+					show: false
+				},
+				emphasis: {
+					itemStyle: {
+						shadowBlur: 10,
+						shadowOffsetX: 0,
+						shadowColor: 'rgba(0, 0, 0, 0.5)'
+					}
+				}
+			}
+		]
+	};
+
+				myChart.setOption(option);
+			</script>
+		</div>
+		<div class="wenZi">
+			<P>90后男女想脱单比例是不一样的
+			  <br>
+			  但是都超过了80%的90后想脱单
+			  <br>
+			  所以，90后的男女想脱单的几率还是很大的。
+			</P>
+		</div>
+		
+		<br>
+		
+		<div class="tupian">
+			<figure>
+				<img src="img/img-3.png" width="600px" height="200" alt="脱单欲望图">
+			</figure>
+		</div>
+		
+		<!--单身原因设置-->
+		<div class="wenZi-1" >
+			<h3>婚恋苦恼</h3>
+			<h4 id="one1">单身原因</h4>
+			<p>有单身欲望可知，90后脱单欲望是很强烈的<br>但为什么那么多人脱不了单<br>90后单身压力的一个重要原因就是圈子小，没有接触圈子外面的人<br>其次是工作忙和对爱情的幻想过于完美，幻想着甜甜的爱情固然美好，但想要找到另一半，也要考虑考虑现实问题呀。</p>
+		</div>
+		<div class="yuanYin" id="yuanyin" >
+
+			<script type="text/javascript">
+				var myChart=echarts.init(document.getElementById('yuanyin'));
+
+				var option = {
+						title: {
+							text: '90后单身原因',
+
+							left: 'center'
+						},
+						tooltip: {
+							trigger: 'item',
+
+						},
+						legend: {
+							orient: 'horizontal',
+							top: 40,
+							data: ['圈子小', '工作忙', '对爱情幻想过于完美', '其他',]
+						},
+						series: [
+							{
+								name: '单位：%',
+								type: 'pie',
+								radius: '55%',
+								center: ['50%', '60%'],
+								data: [
+									{value: 40, name: '圈子小'},
+									{value: 15, name: '工作忙'},
+									{value: 12, name: '对爱情幻想过于完美'},
+									{value: 33, name: '其他'},
+
+								],
+								emphasis: {
+									itemStyle: {
+										shadowBlur: 10,
+										shadowOffsetX: 0,
+										shadowColor: 'rgba(0, 0, 0, 0.5)'
+									}
+								}
+							}
+						]
+					};
+
+				myChart.setOption(option);
+			</script>
+
+		</div>
+
+		
+
+
+		<!--男女单身主要原因-->
+		<div class="wenZi">
+			<p>     还有一个原因，男女生性格差异，
+				<br>所造成的男生和女生单身压力的主要原因也不尽相同，
+				<br>在爱情这件事儿上，男生应该要更加主动点的追求女生，不能因为内向和不擅交际而错失所爱呀<br>
+			对于女生来说，应该要多给男生机会，把爱情想象的太完美可能也会错失所爱呀</p>
+		</div>
+		<div class="yuanYin1">
+			<!--男性单身主要原因-->
+			<div id="man" class="left">
+						<script type="text/javascript">
+						var myChart=echarts.init(document.getElementById('man'));
+
+							var option = {
+		title: {
+			text: '男性单身主要原因',
+
+			left: 'center'
+		},
+		tooltip: {
+			trigger: 'item',
+
+		},
+		legend: {
+			orient: 'horizontal',
+			bottom: 10,
+			data: ['性格内向不擅交际', '工作忙', '经济条件不理想', '其他']
+		},
+		series: [
+			{
+				name: '单位：%',
+				type: 'pie',
+				radius: ['50%', '70%'],
+				avoidLabelOverlap: false,
+				label: {
+					name:'nsn',
+					show: false,
+					position: 'center'
+				},
+				emphasis: {
+					label: {
+						show: true,
+						fontSize: '30',
+						fontWeight: 'bold'
+					}
+				},
+				labelLine: {
+					show: false
+				},
+				data: [
+					{value: 33.53, name: '性格内向不擅交际'},
+					{value: 32.07, name: '工作忙'},
+					{value: 19.02, name: '经济条件不理想'},
+					{value: 15.38, name: '其他'},
+
+				]
+			}
+		]
+	};
+
+						myChart.setOption(option);
+						</script>
+			</div>
+			<!--女性单身主要原因-->
+			<div id="woman" class="right">
+
+						<script type="text/javascript">
+						var myChart=echarts.init(document.getElementById('woman'));
+
+							var option = {
+		title: {
+			text: '女性单身主要原因',
+
+			left: 'center'
+		},
+		tooltip: {
+			trigger: 'item',
+
+		},
+		legend: {
+			orient: 'horizontal',
+			bottom: 10,
+			data: ['对爱情幻想过于完美', '工作忙', '性格内向不擅交际', '其他']
+		},
+		series: [
+			{
+				name: '单位：%',
+				type: 'pie',
+				radius: ['50%', '70%'],
+				avoidLabelOverlap: false,
+				label: {
+					name:'nsn',
+					show: false,
+					position: 'center'
+				},
+				emphasis: {
+					label: {
+						show: true,
+						fontSize: '30',
+						fontWeight: 'bold'
+					}
+				},
+				labelLine: {
+					show: false
+				},
+				data: [
+					{value: 33.53, name: '对爱情幻想过于完美'},
+					{value: 32.07, name: '工作忙'},
+					{value: 19.02, name: '性格内向不擅交际'},
+					{value: 15.38, name: '其他'},
+
+				]
+			}
+		]
+	};
+
+						myChart.setOption(option);
+						</script>
+			</div>		
+		</div>
+		
+		<div class="wenZi">
+			<h4 id="one2">结婚苦恼</h4>
+		    <p> 单身有压力，结婚更有压力，
+			<br>彩礼是各地都存在的习俗，也是永远不会过时的习俗.
+			<br>随着生活的提高，彩礼的质量也随着提高，
+			<br>这也是造成结婚率低的重要原因
+			</p>
+		</div>
+		<div class="tupian1">
+			<figure>
+		     <img alt="彩礼" src="img/img4.jpg" width="350" height="250">
+			</figure>
+		</div>
+		
+		<br>
+		<br>
+		
+		<div class="wenZi">
+		  <p>因为时代在进步，90后面临的压力也越来越大,
+			 <br>恋爱婚姻步步艰辛，
+			  <br>苦恼！
+		  </p>
+		</div>
+		
+		
+		
+		<!--脱单时间-->
+		<div class="wenZi" >
+			<h3>婚恋时长</h3>
+			<p>90后，脱单欲望是强烈的，
+			   <br>从想脱单到脱单是肯定需要时间的
+				<br>但整体来说，90后不希望从想脱单到脱单时间太长
+			</p>
+		</div>
+		<div  class="time" id="shijian" >
+			<script type="text/javascript">
+				var myChart=echarts.init(document.getElementById('shijian'));
+
+				var option = {
+		 title: {
+			text: '90后希望的脱单的时长',
+
+			left: 'center'
+		},
+		color: ['#61A0A8'],
+		tooltip: {
+			trigger: 'axis',
+			axisPointer: {            
+				type: 'shadow'        
+			}
+		},
+		grid: {
+			left: '3%',
+			right: '4%',
+			bottom: '3%',
+			containLabel: true
+		},
+		xAxis: [
+			{
+				type: 'category',
+				data: ['3个月',  '2年', '12个月', '6个月', '其他',],
+				axisTick: {
+					alignWithLabel: true
+				}
+			}
+		],
+		yAxis: [
+			{
+				type: 'value'
+			}
+		],
+		series: [
+			{
+				name: '单位：%',
+				type: 'bar',
+				barWidth: '60%',
+				data: [30, 19, 18, 17, 16,]
+			}
+		]
+	};
+
+				myChart.setOption(option);
+			</script>	
+		</div>
+		<div class="wenZi">
+		<p>90后的人们脱单时长不长，闪婚，恋爱时长也不长，对对方了解的不够深入
+			<br>这容易引起婚姻生活的矛盾,引发离婚率的提高</p>
+		</div>
+		
+		<div class="maodun" id="maoDun">
+		<script type="text/javascript">
+				var myChart=echarts.init(document.getElementById('maoDun'));
+		
+			option = {
+    title: {
+        text: '夫妻间离婚矛盾',
+        subtext: '',
+        left: 'center'
+    },
+    tooltip: {
+        trigger: 'item',
+        formatter: '{a} <br/>{b} : {c} ({d}%)'
+    },
+    legend: {
+        orient: 'horizontal',
+        bottom: 'bottom',
+          data: ['性格不合', '感情平淡', '婚外恋', '两地分居', '家庭暴力', '不良嗜好', '压力太大', '婆媳关系']
+    },
+    series: [
+        {
+            name: '访问来源',
+            type: 'pie',
+            radius: '55%',
+            center: ['50%', '60%'],
+            data: [
+                {value: 3573, name: '性格不合'},
+                {value: 1021, name: '感情平淡'},
+                {value: 1798, name: '婚外恋'},
+                {value: 661, name: '两地分居'},
+                {value: 1009, name: '家庭暴力'},
+                {value: 766, name: '不良嗜好'},
+                {value: 731, name: '压力太大'},
+                {value: 441, name: '婆媳关系'}
+            ],
+            emphasis: {
+                itemStyle: {
+                    shadowBlur: 10,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+            }
+        }
+    ]
+};
+			myChart.setOption(option);
+			</script>
+		</div>
+		
+		<div class="jianyi" id="jianyi">
+			<h3>一些建议</h3>
+		<p>90后，是忙碌的一代，是需要抓住机遇的一代，
+			<br>社会的发展越来越快，谈恋爱的时间越来越少，
+			<br>闪婚的人员越来越多，夫妻离婚率也越来越高，
+			<br>据调查疫情过后，各地90后离婚迎来高峰，
+			<br>如何维持恋爱婚姻的关系则重中加重。</p>
+		<img alt="男女背靠" src="img/img-5.jpg" height="300" width="220">
+			<p>为避免夫妻情侣生活结束的太快，
+			<br>可以注意一下几点</p>
+			<p>第一、适当的增长恋爱期的时间，来考察性格合不合
+			<br>第二、要看重感情，不要进行婚外恋，不与他人进行暧昧</p>
+		<img alt="男女亲嘴" src="img/img-6.jpg" height="320" width="180">
+			<p>第三、要注重责任，90后的男女只有肩负起自己的责任，婚姻才会美满
+			<br>
+				第四、不要只想着工作，要出门结实异性，才会遇上对眼的人儿
+			</p>
+			<br>
+			<p>90后，是让人着急的一代，也是具有鲜明个性的一代，
+			<br>90后他（她）们独立自主，有自己的想法，
+			<br>了解90后的婚恋观有助于社会认识到90后的想法，
+			<br>了解90后的生活苦恼和生活压力。</p>
+			
+			<br>
+			<h3>希望90后能越来越好，让社会更加认可！！！</h3>
+			
+		</div>
+	</div>
+	<div class="foot">
+		<footer>
+			<p class="yejiao">数据来源：199IT中文互联网数据资讯网
+				<br>
+			<a href="html/html-1.html">关于我们</a>
+			</p>
+		</footer>
+	</div>
+</body>
+</html>

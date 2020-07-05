@@ -1,0 +1,150 @@
+.container{
+			background-color: #F9EDCB;
+		}
+		h3{
+			color:#49D6F0;
+			text-align: center;
+			font-size: 25px;
+		}
+		h2{
+			color:#49D6F0;
+			text-align:center;
+			font-size: 35px;
+		}
+		a:hover{color: #FFFFFF}
+		a:visited{color: #AEEDE7}
+		a{text-decoration: none;
+		  color:  #64B0F0;}
+		
+		.nav {	
+				position:fixed;
+				align-items: center;
+				background-color: #F9EDCB;
+				text-align: center;
+				top:0px;
+				left: 0px;
+				right: 0px;
+				z-index: 9999;
+				height: 80px;
+				margin: 0 auto;
+				
+				
+				
+		}
+		.nav ul li{
+			display: inline-block;
+			padding-left: 60px;
+			letter-spacing: 10px;
+			font-size: 30px;
+			
+		}
+
+		.shouYe{
+			margin:auto;
+			margin-top: 100px;
+			height: 500px;
+			background-color:#F9EDCB;
+		}
+		.yali{
+			height: 500px;
+			margin-top: 50px;
+		}
+		.maodun{
+			height: 500px;
+			margin-top: 50px;
+		}
+		.yuanYin{
+			height: 500px;
+			background-color:#F9EDCB;
+			margin-top: 50px;
+		}
+		
+		.yuWang{
+			height: 500px;
+			background-color: #F9EDCB;
+			margin-top: 50px;
+		}
+		
+		.jianyi{
+			margin:50px;
+			text-align:center;
+			height: 1450px;
+			background-color:#F9EDCB;
+			margin-bottom: 50px;
+		}
+		
+		.time{
+			height: 500px;
+			background-color:#F9EDCB;
+			margin-top: 50px;
+		}
+		
+		.yuanYin1{
+			margin:auto;
+			width: 1200px;
+			height: 600px;
+			background-color: #F9EDCB;
+			text-align: center;
+		}
+		
+		
+		.left{
+			float: left;
+			width: 500px;
+			height: 500px;
+			background-color: #F9EDCB;
+			margin-left: 200px;
+		}
+		
+		.right{
+			float: left;
+			width: 500px;
+			height: 500px;
+			background-color:#F9EDCB;
+		}
+		
+		.wenZi{margin:50px;
+			text-align:center;
+			height: 150px;
+			background-color:#F9EDCB;
+			margin-bottom: 50px;
+		}
+         .wenZi-1{margin:50px;
+			text-align:center;
+			height: 190px;
+			background-color:#F9EDCB;
+			margin-bottom: 50px;
+		}
+         .wenzi-1 p{
+	        font-size: 20px;
+         }
+		.wenZi p{
+			font-size: 20px;
+		}
+        .jianyi p{
+	        font-size: 20px;
+        }
+		.yejiao{
+			text-align: center;
+		}
+		
+		.tupian{
+			width: 700px;
+			margin: auto;
+			height: 200px;
+			background-color: #F9EDCB;
+		}
+		.tupian1{
+			width: 700px;
+			margin: auto;
+			height: 200px;
+			background-color: #F9EDCB;
+			text-align: center;
+		}
+		.foot{
+			height: 100px;
+			background-color: #B1B0B0;
+			color: #DED9D9
+			
+		}
+		
